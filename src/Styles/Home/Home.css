@@ -1,0 +1,25 @@
+#home {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  height: 100vh;
+}
+#home-p {
+  margin-top:2em;
+  margin-left:1em;
+  font-size: 2.2rem;
+  padding: 1em;
+  height:fit-content;
+  padding: 0.5em;
+  width:32vw;
+  border-radius: 0.4em;
+  color:azure;
+  box-shadow: 0.2em 0.2em 0.2em 0.1em rgba(58, 58, 58, 0.5);
+}
+#home-img{
+  margin-top: -8em;
+  margin-left:10em;
+  width: 69%;
+  padding: 1em;
+  border-radius: 0.4em;
+}

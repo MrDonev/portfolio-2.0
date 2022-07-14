@@ -1,0 +1,34 @@
+.navigation {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  margin: 0.5rem;
+  position: sticky;
+  transition: background-color 0.5s ease-in-out;
+
+  @media screen and (min-width: 2000px) {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+.navigation:hover {
+  background-color: rgb(101, 23, 173);
+}
+#nav {
+  grid-area: nav;
+  border: 1px solid white;
+  border-radius: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 2em;
+  margin-left:0.5em;
+}
+
+.selectedNav{
+  background-color: rgb(101, 23, 173);
+}
+.menu-hidden{
+  display:none;
+}
