@@ -1,0 +1,64 @@
+#contacts {
+  height: 70vh;
+  padding: 8em;
+  grid-area: contacts;
+}
+
+.contact-list {
+  color:white;
+  margin-top: 12vw;
+  padding: 1em;
+  border: 1px solid white;
+  border-radius: 1em;
+  width: 38vw;
+}
+#ln-img,
+#gh-img,
+#em-img {
+  background-color: aliceblue;
+  width: 4vw;
+  height: 4vw;
+  cursor: pointer;
+  border-radius: 1em;
+  border: 1px solid white;
+}
+
+#linkedin,
+#github,
+#email {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+}
+/* sliding box animation */
+.contacts-info {
+  border-radius: 1em;
+  margin-left: 0.5em;
+  text-align: center;
+  position: inherit;
+  width: 100%;
+  height: 4vw;
+  display: none;
+  overflow: hidden;
+  background: #ffffff63;
+  transition: all 1.3s ease-in-out;
+}
+.contacts-info > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color:#4badfd;
+}
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 20vw;
+  border: 1px solid white;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 0;
+}

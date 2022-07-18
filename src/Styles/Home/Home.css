@@ -1,25 +1,37 @@
 #home {
   margin: 0;
   display: grid;
+  grid-area: home;
   grid-template-columns: 2fr 2fr;
+  max-width:100vw;
   height: 100vh;
 }
-#home-p {
-  margin-top:2em;
+.p-field{
+  text-align: center;
+  margin-top:6em;
   margin-left:1em;
   font-size: 2.2rem;
-  padding: 1em;
   height:fit-content;
   padding: 0.5em;
   width:32vw;
   border-radius: 0.4em;
-  color:azure;
-  box-shadow: 0.2em 0.2em 0.2em 0.1em rgba(58, 58, 58, 0.5);
+  color:rgb(73, 102, 180);
+  box-shadow: 0.05em 0.1em 0.2em 0.05em #9494949d;
+  transition: all .7s ease-in-out;
 }
-#home-img{
-  margin-top: -8em;
+#home-img-web{
+  margin-top: 1em;
   margin-left:10em;
-  width: 69%;
+  width: 60%;
   padding: 1em;
   border-radius: 0.4em;
+  transition: all .8s ease-in-out;
+  
+}
+
+.p-field:hover{
+transform: scale(1.1);
+}
+#home-img-web:hover{
+  transform: scale(1.2);
 }

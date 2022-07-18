@@ -1,24 +1,42 @@
 import '../../Styles/Header/Header.css';
 import logo from '../../Assets/images/logo.png';
-import { useRef } from 'react';
-import { useIsInViewport } from '../../Assets/utils/navSelector';
+import contact from '../../Assets/images/contact.png';
+import { useEffect } from 'react';
 
 const Header = () => {
-  const ref = useRef(null);
-  const isInViewport = useIsInViewport(ref);
-  if (isInViewport) {
-    document.getElementById('nav').childNodes.forEach((node) => {
-      if (node.hash === '#app') {
-        node.classList.toggle('selectedNav');
-      } else {
-        node.classList.remove('selectedNav');
-      }
-    });
-  }
+  useEffect(() => {
+    const checkbox = document.getElementById('checkbox');
+    checkbox.addEventListener(
+      'change',
+      () => {
+        document.getElementById('app').classList.toggle('darkTheme');
+        document.getElementById('label').classList.toggle('darkLabel');
+      },
+      []
+    );
+  });
   return (
-    <div ref={ref} id="header">
-      <img id="logo-img" src={logo} alt="id-logo" />
-      <h1 id="header-title">Iliya Donev Full Stack Developer </h1>
+    <div id="header">
+      <a href="#app" id="home-link">
+        <img title="Home" id="logo-img" src={logo} alt="id-logo" />
+      </a>
+      <h1 id="header-title">Iliya Donev Portfolio Website </h1>
+      <div id="contacts-theme">
+       <input type="checkbox" className="checkbox" id="checkbox" />
+        <label htmlFor="checkbox" className="label" id="label">
+          <i className="fas fa-moon">🌙</i>
+          <i className="fas fa-sun">🔅</i>
+          <div className="ball" />
+        </label> <a href="#contacts">
+          <img
+            title="Contact me"
+            src={contact}
+            alt="contact"
+            id="contact-img-header"
+          />
+        </a>
+        
+      </div>
     </div>
   );
 };

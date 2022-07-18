@@ -1,20 +1,151 @@
-html,body{
-    padding:0;
-    margin:0;
-    scroll-behavior: smooth;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+::-webkit-scrollbar {
+  width: 21px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4badfd;
+  border-radius: 0.4em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0087f5;
+}
+#app {
+  max-width: 100vw;
+}
+.app {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  grid-template-areas:
+    'header header'
+    'nav home'
+    'nav about'
+    'nav projects'
+    'nav contacts';
+
+    background: rgb(255,255,255);
+    background: linear-gradient(165deg, rgba(255,255,255,1) 15%, rgba(244,244,244,1) 45%, rgba(224,226,224,1) 75%, rgba(201,201,201,1) 100%);
+}
+.darkTheme {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(17, 24, 39),
+    rgb(75, 85, 99)
+  );
+}
+#nav {
+  position: sticky;
+  top: 42vh;
+  grid-column: 1fr;
+}
+#header {
+  position: sticky;
+  top: 0;
+}
+@media only screen and (max-width: 1045px) {
+  .app {
+    display: flex;
+    flex-direction: column;
     max-width: 100vw;
+  }
+  #nav {
+    display: none;
+  }
+  #header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    font-size: 0.8rem;
+  }
+  #header h1{
+    font-size: 1.8rem;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
+  #home-img-web {
+    margin: auto;
+  }
+  .p-field {
+    margin: auto;
+    width: 85vw;
+    padding: 0;
+   
+  }
+  #about{
+display:flex;
+flex-direction: column;
 }
-#app{
-    background-image: linear-gradient(to right bottom, #c7d5eb, #9fb2d3, #94a3bd, #818ea8, #7a859e);
-}
-#nav{
-    position: sticky;
-    top: 42vh;
-    grid-column: 1fr;
-}
-/* #header{
-    position: sticky;
-    top:0;
-} */
-#home{
+  #about-text {
+    margin: auto;
+    width: 95vw;
+    
+  }
+  #about-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #tech-container {
+    margin: auto;
+    width: 55vw;
+    display: none;
+  }
+  #dev4 {
+    display: none;
+  }
+  .svg {
+    padding: 0;
+  }
+  #projects{
+    display: flex;
+    flex-direction: column;
+  }
+  #projects-section {
+    display: flex;
+    flex-direction: column;
+    margin-top:26em;
+    margin-left:5vw;
+    padding: 0 !important;
+    inline-size: auto;
+  }
+  #dot-container {
+    display: none;
+  }
+  .slideshow-container {
+    max-width: 95vw;
+    padding: 0 !important;
+    margin:0 !important;
+    height: fit-content;
+  }
+  .mySlides{
+    width:90vw;
+  }
+  #contacts {
+    padding:0 !important;
+    margin-top:15em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+    border-radius: 0.4em;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+  }
 }
