@@ -2,6 +2,7 @@ import '../../Styles/Header/Header.css';
 import logo from '../../Assets/images/logo.png';
 import contact from '../../Assets/images/contact.png';
 import { useEffect } from 'react';
+import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
 
 const Header = () => {
   useEffect(() => {
@@ -35,7 +36,7 @@ const Header = () => {
             id="contact-img-header"
           />
         </a>
-        
+        <HamburgerMenu/>
       </div>
     </div>
   );

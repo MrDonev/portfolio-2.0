@@ -6,7 +6,9 @@ import './Styles/app.css';
 import Projects from './Components/Projects/Projects';
 import Contacts from './Components/Contacts/Contacts';
 
+
 const App = () => {
+
   return (
     <div id="app" className='app'>
       <Header />
