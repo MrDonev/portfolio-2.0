@@ -6,19 +6,21 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: auto;
+    margin-left: 71vw;
+    margin-top:14vh !important;
     padding: 0;
-    width: 25vw !important; 
+    width: 22vw !important; 
   }
   
   .menu > li {
+    border-radius: 1em;
     overflow: hidden;
-    width: 55vw !important;
+    width: 22vw !important;
   }
   .menu > li > a{
     font-size: large;
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
   
   .menu-button-container {
@@ -108,7 +110,7 @@
       padding: 0.5em 0;
       width: 100%;
       color: white;
-      background-color: #222;
+      background-color: rgba(255, 255, 255, 0.288);
     }
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #444;

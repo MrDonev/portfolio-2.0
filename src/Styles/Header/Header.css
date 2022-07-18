@@ -20,6 +20,7 @@
   justify-content: space-around; */
   display:grid;
   grid-template-columns: repeat(3,auto);
+  z-index: 999;
 }
 #home-link{
   margin-top:1.5em;
@@ -92,6 +93,7 @@ animation-iteration-count: 3;
   width: 2.1em;
   height: 1em;
   margin:1.5em;
+  border: 1px solid grey;
   background-color:rgb(255, 255, 255);
   display: flex;
   border-radius:2em;
