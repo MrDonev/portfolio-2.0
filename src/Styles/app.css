@@ -156,7 +156,7 @@ body {
     padding: 0;
   }
   #projects {
-    margin-top: 10em;
+    margin-top: 22vh;
     display: flex;
     flex-direction: column;
   }
