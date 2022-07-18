@@ -65,7 +65,7 @@ export default function Contacts() {
           />
           <div className="contacts-info close">
             <a
-              href="mailto:MrDonev@protonmail.com?subject=Interview&body=We%20would%20to%20invite%20you%20to%20an%20interview!"
+              href="mailto:MrDonev@protonmail.com?subject=Interview&body=We%20would%20like%20to%20invite%20you%20to%20an%20interview!"
               rel="noreferrer"
               target="_blank"
             >
