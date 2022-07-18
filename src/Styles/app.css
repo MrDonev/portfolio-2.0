@@ -80,6 +80,9 @@ body {
     flex-direction: column;
     max-width: 100vw;
   }
+  #hamburger-menu{
+display:block
+  }
   #nav {
     display: none;
   }
