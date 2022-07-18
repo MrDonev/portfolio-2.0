@@ -189,8 +189,33 @@ body {
 
   #contacts {
     padding: 0 !important;
-    margin-top: 15em;
+    margin-top: 12em;
+    height: 50vh;
   }
+  .contact-list{
+    margin: auto;
+    width: 88vw !important;
+  }
+  #ln-img,
+#gh-img,
+#em-img {
+width: 15vw !important;
+height: 15vw !important;
+}
+.contacts-info{
+  width: 65vw !important;
+}
+.open {
+  max-width: 65vw !important;
+  height: 15vw !important;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 0;
+}
   ::-webkit-scrollbar-thumb {
     background: #5a5a5a;
     border-radius: 0.4em;
