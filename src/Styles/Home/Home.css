@@ -15,7 +15,7 @@
   padding: 0.5em;
   width:32vw;
   border-radius: 0.4em;
-  color:rgb(73, 102, 180);
+  color:rgb(255, 255, 255);
   box-shadow: 0.05em 0.1em 0.2em 0.05em #9494949d;
   transition: all .7s ease-in-out;
 }
