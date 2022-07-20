@@ -165,7 +165,7 @@ body {
   #projects-section {
     display: flex;
     flex-direction: column;
-    margin-top: 26em;
+    margin-top: 37em;
     margin-left: 5vw;
     padding: 0 !important;
     inline-size: auto;
@@ -191,7 +191,7 @@ body {
 
   #contacts {
     padding: 0 !important;
-    margin-top: 12em;
+    margin-top: 15em;
     height: 50vh;
   }
   .contact-list{

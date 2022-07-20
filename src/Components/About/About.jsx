@@ -31,17 +31,21 @@ const About = () => {
         <div className="p-field" id="about-text">
           <h4>About me in a few words:</h4>
           <p ref={ref}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe
-            eius aliquid eligendi ea adipisci quaerat culpa iure, veniam ipsam
-            libero assumenda, non eaque atque vel ab sequi quidem officia. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. In cumque quae
-            obcaecati expedita veniam quasi doloremque assumenda delectus
-            asperiores architecto esse suscipit neque, maxime totam laudantium
-            nobis quas placeat libero.
+            I've always found technology fascinating and had a passion for it. I
+            remember in my early teens (when mIRC was popular) I managed to
+            learn the language used to create custom scripts for mIRC client and
+            had lots of fun with it. I regret not following the coding path then
+            but such is life. I started my journey into tech quite late at the
+            age of 33. A friend of mine recommended trying to learn JavaScript
+            and I felt fifteen again. I can say I'm learning about web
+            development with the passion of a teenager. It's always rewarding to
+            see the results of your work and that makes me continue learning new
+            technologies and practices.
           </p>
         </div>
-        <div id='about-images'>
+        <div id="about-images">
           <img id="dev4" src={dev4} alt="dev4" />
+          <h2>Current tech stack:</h2>
           <div id="tech-container">
             <img title="Axios" className="svg" src={axios} alt="axios" />
             <img title="HTML" className="svg" src={html} alt="html" />
