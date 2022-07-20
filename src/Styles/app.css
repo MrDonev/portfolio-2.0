@@ -15,6 +15,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #4badfd;
+  box-shadow: 0px 1px 1px 1px rgb(71, 71, 71) inset;
   border-radius: 0.4em;
 }
 
@@ -33,22 +34,23 @@ body {
     'nav about'
     'nav projects'
     'nav contacts';
-
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255);
   background: linear-gradient(
     165deg,
     rgba(255, 255, 255, 1) 15%,
     rgba(244, 244, 244, 1) 45%,
     rgba(224, 226, 224, 1) 75%,
     rgba(201, 201, 201, 1) 100%
-  );
+  ); */
+  background-image: url('../Assets/images/light-bkg.jpg');
 }
 .darkTheme {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     rgb(17, 24, 39),
     rgb(75, 85, 99)
-  );
+  ); */
+  background-image: url('../Assets/images/dark-bkg.jpg');
 }
 #nav {
   position: sticky;
