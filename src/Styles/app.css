@@ -15,7 +15,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #4badfd;
-  box-shadow: 0px 1px 1px 1px rgb(71, 71, 71) inset;
+  box-shadow: 0px 1px 1px 1px rgb(52, 98, 167) inset;
   border-radius: 0.4em;
 }
 
@@ -135,6 +135,7 @@ body {
     padding: 0;
   }
   #about {
+    margin-top:0;
     display: flex;
     flex-direction: column;
   }
@@ -159,7 +160,7 @@ body {
     padding: 0;
   }
   #projects {
-    margin-top: 35em;
+    margin-top: 28em;
     display: flex;
     flex-direction: column;
   }
@@ -192,8 +193,8 @@ body {
 
   #contacts {
     padding: 0 !important;
-    margin-top: 30em;
     height: 50vh;
+    margin-top:32em !important;
   }
   .contact-list{
     margin: auto;

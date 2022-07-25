@@ -19,7 +19,6 @@ export default function Contacts() {
     }
   return (
     <div id="contacts">
-    
       <div ref={ref} className="contact-list">  
       <h1> Ways of contacting me :</h1>
         <div id="linkedin">
